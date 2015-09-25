@@ -5,6 +5,7 @@ class TestCommand extends \PHPUnit_Framework_TestCase {
 
 	/**
 	 * @dataProvider generateTestData
+	 * @param string $expected
 	 * @param string $value
 	 */
 	public function testHandle($expected, $input) {
