@@ -1,6 +1,6 @@
 -- Запрос 1
 SELECT
-  `human`.`name` as name, GROUP_CONCAT(`vacation_dist`.`name` ASC SEPARATOR ',') as distination
+  `human`.`name` as name, GROUP_CONCAT(`vacation_dist`.`name` SEPARATOR ',') as distination
 FROM `human`, `human_vacation_dist`, `vacation_dist`
 WHERE
 `human`.`id` = `human_vacation_dist`.`human_id`
